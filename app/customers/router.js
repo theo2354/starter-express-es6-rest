@@ -34,7 +34,7 @@ const getCustomers = async (req, res) => {
  * @param {express.Request}   req   Express HTTP request
  * @param {express.Response}  res   Express HTTP response
  */
-const createCustomer = (req, res) => {
+const createCustomer = async (req, res) => {
   customer.addCustomer(req.body);
   res.status(201).send()
 };
